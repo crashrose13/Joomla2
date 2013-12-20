@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.5" type="plugin" group="authentication" method="upgrade">
+	<name>Authentication - LoginBoss</name>
+	<version>1.0</version>
+	<creationDate>2009/08/04</creationDate>
+	<author>joomboss.com</author>
+	<authorEmail>joomboss@gmail.com</authorEmail>
+	<authorUrl>http://joomboss.com</authorUrl>
+	<copyright>joomboss.com</copyright>
+	<license>GPL</license>
+	<description>LoginBoss authentication plugin</description>
+	<files>
+		<filename plugin="loginboss">loginboss.php</filename>
+	</files>
+</extension>

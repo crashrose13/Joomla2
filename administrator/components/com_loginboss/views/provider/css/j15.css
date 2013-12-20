@@ -1,0 +1,25 @@
+fieldset{
+  width:500px;
+}
+
+fieldset ol{
+  list-style:none;
+  padding:0;
+  margin:2px;
+}
+
+fieldset ol li{
+  margin:0 0 9px 0;
+  padding: 0;
+}
+
+fieldset ol li label{
+  width:120px;
+  display:block;
+  float:left;
+  font-weight:bold;
+}
+/*fieldset input{
+  display: block;
+}*/
+

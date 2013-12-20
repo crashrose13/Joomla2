@@ -1,0 +1,4 @@
+INSERT IGNORE INTO `#__loginboss_providers` (provider, title, enabled, image) VALUES ('facebook', 'Facebook', '0', 'components/com_loginboss/images/facebook-icon.png');
+INSERT IGNORE INTO `#__loginboss_providers` (provider, title, enabled, image) VALUES ('yahoo', 'Yahoo', '0', 'components/com_loginboss/images/yahoo-icon.png');
+INSERT IGNORE INTO `#__loginboss_providers` (provider, title, enabled, image) VALUES ('linkedin', 'LinkedIn', '0', 'components/com_loginboss/images/linkedin-icon.png');
+INSERT IGNORE INTO `#__loginboss_providers` (provider, title, enabled, image) VALUES ('microsoft', 'Microsoft', '0', 'components/com_loginboss/images/microsoft-icon.png');

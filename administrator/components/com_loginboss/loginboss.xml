@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="1.7" method="upgrade">
+  <name>Login Boss</name>
+  <creationDate>Jul 7, 2012</creationDate>
+  <author>JoomBoss</author>
+  <authorEmail>support@joomboss.com</authorEmail>
+  <authorUrl>http://joomboss.com</authorUrl>
+  <copyright>(C) 2012 JoomBoss. All rights reserved.</copyright>
+  <license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+  <version>1.2.2</version>
+  <description>OAuth login integration</description>
+  <scriptfile>install.loginboss.php</scriptfile>
+  <install>
+    <sql>
+      <file driver="mysql" charset="utf8">install.loginboss.sql</file>
+    </sql>
+  </install>
+  <update>
+    <schemas>
+      <schemapath type="mysql">sql/updates/mysql</schemapath>
+    </schemas>
+  </update>
+  <!--Uninstall SQL script is commented to ease the update process 
+  <uninstall>
+    <sql>
+      <file driver="mysql" charset="utf8">uninstall.loginboss.sql</file>
+    </sql>
+  </uninstall>
+  End of uninstall script -->
+  
+  <administration>
+    <menu task="panel">COM_LOGINBOSS</menu>
+    <submenu>
+      <menu task="panel">CONTROL_PANEL</menu>
+      <menu task="help">HELP</menu>
+    </submenu>
+    <files folder="admin">
+      <filename>index.html</filename>
+      <filename>install.loginboss.sql</filename>
+      <filename>uninstall.loginboss.sql</filename>
+      <filename>sql/updates/mysql/1.0.sql</filename>
+      <filename>sql/updates/mysql/1.1.sql</filename>
+      <filename>sql/updates/mysql/1.2.sql</filename>
+      <filename>controller.php</filename>
+      <filename>loginboss.php</filename>
+      <filename>models/index.html</filename>
+      <filename>models/provider.php</filename>
+      <filename>views/index.html</filename>
+      <filename>views/view.php</filename>
+      <filename>views/provider/index.html</filename>
+      <filename>views/provider/view.php</filename>
+      <filename>views/provider/tmpl/index.html</filename>
+      <filename>views/provider/tmpl/default.php</filename>
+      <filename>views/provider/css/j15.css</filename>
+      <filename>views/provider/css/index.html</filename>
+      <filename>views/providers/index.html</filename>
+      <filename>views/providers/view.php</filename>
+      <filename>views/providers/tmpl/index.html</filename>
+      <filename>views/providers/tmpl/default.php</filename>
+      <filename>views/providers/css/j15.css</filename>
+      <filename>views/providers/css/index.html</filename>
+      <filename>views/help/index.html</filename>
+      <filename>views/help/view.php</filename>
+      <filename>views/help/tmpl/index.html</filename>
+      <filename>views/help/tmpl/default.php</filename>
+      <filename>views/help/tmpl/default_google.php</filename>
+      <filename>views/help/tmpl/default_twitter.php</filename>
+      <filename>views/help/tmpl/default_facebook.php</filename>
+      <filename>views/help/tmpl/default_linkedin.php</filename>
+      <filename>views/help/tmpl/default_microsoft.php</filename>
+      <filename>views/help/tmpl/default_yahoo.php</filename>
+      <filename>views/help/images/index.html</filename>
+      <filename>views/help/images/google1.jpg</filename>
+      <filename>views/help/images/google2.jpg</filename>
+      <filename>views/help/images/loginby.png</filename>
+      <filename>views/help/images/twitter1.jpg</filename>
+      <filename>views/help/images/twitter2.jpg</filename>
+      <filename>views/help/images/fb1.png</filename>
+      <filename>views/help/images/fb2.png</filename>
+      <filename>views/help/images/fb3.png</filename>
+      <filename>views/help/images/linkedin1.png</filename>
+      <filename>views/help/images/linkedin2.png</filename>
+      <filename>views/help/images/linkedin3.png</filename>
+      <filename>views/help/images/microsoft1.png</filename>
+      <filename>views/help/images/microsoft2.png</filename>
+      <filename>views/help/images/yahoo1.png</filename>
+      <filename>views/help/images/yahoo2.png</filename>
+      <filename>views/help/images/yahoo3.png</filename>
+    </files>
+    <languages folder="admin">
+      <language tag="en-GB">en-GB.com_loginboss.sys.ini</language>
+      <language tag="en-GB">en-GB.com_loginboss.ini</language>
+    </languages>
+  </administration>
+  <files>
+    <filename>index.html</filename>
+    <filename>loginboss.php</filename>
+    <filename>controller.php</filename>
+    <filename>classes/index.html</filename>
+    <filename>classes/ProviderFactory.php</filename>
+    <filename>classes/index.html</filename>
+    <filename>classes/ExternalProfile.php</filename>
+    <filename>classes/providers/OAUTH.php</filename>
+    <filename>classes/providers/lib/index.html</filename>
+    <filename>classes/providers/lib/oauth.php</filename>
+    <filename>classes/providers/lib/linkedinoauth.php</filename>
+    <filename>classes/providers/Twitter.php</filename>
+    <filename>classes/providers/Google.php</filename>
+    <filename>classes/providers/Facebook.php</filename>
+    <filename>classes/providers/Linkedin.php</filename>
+    <filename>classes/providers/Microsoft.php</filename>
+    <filename>classes/providers/Yahoo.php</filename>
+    <filename>images/index.html</filename>
+    <filename>images/google-icon.png</filename>
+    <filename>images/twitter-icon.png</filename>
+    <filename>images/facebook-icon.png</filename>
+    <filename>images/microsoft-icon.png</filename>
+    <filename>images/yahoo-icon.png</filename>
+    <filename>images/linkedin-icon.png</filename>
+    <filename>models/index.html</filename>
+    <filename>models/model.php</filename>
+    <filename>models/registration.php</filename>
+    <filename>models/link.php</filename>
+    <filename>models/registration_j2.php</filename>
+    <filename>views/index.html</filename>
+    <filename>views/view.php</filename>
+    <filename>views/login/index.html</filename>
+    <filename>views/login/view.php</filename>
+    <filename>views/login/tmpl/index.html</filename>
+    <filename>views/login/tmpl/default.php</filename>
+    <filename>views/login/tmpl/default_activation.php</filename>
+    <filename>views/link/index.html</filename>
+    <filename>views/link/view.php</filename>
+    <filename>views/link/tmpl/index.html</filename>
+    <filename>views/link/tmpl/default.php</filename>
+  </files>
+    <languages>
+        <language tag="en-GB">en-GB.com_loginboss.ini</language>
+    </languages>
+</extension>

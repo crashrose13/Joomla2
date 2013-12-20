@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.5" type="plugin" group="user" method="upgrade">
+	<name>User - LoginBoss</name>
+	<version>1.0</version>
+	<creationDate>2012/09/04</creationDate>
+	<author>joomboss.com</author>
+	<authorEmail>joomboss@gmail.com</authorEmail>
+	<authorUrl>http://joomboss.com</authorUrl>
+	<copyright>joomboss.com</copyright>
+	<license>GPL</license>
+	<description>LoginBoss user plugin. Keeps the LoginBoss users table consistent with core Joomla users.</description>
+	<files>
+		<filename plugin="loginboss">loginboss.php</filename>
+	</files>
+</extension>
